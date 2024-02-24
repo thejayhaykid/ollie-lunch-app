@@ -27,6 +27,7 @@ model User {
   resetTokenExpiresAt DateTime?
   webAuthnChallenge   String?          @unique
   credentials         UserCredential[]
+  roles               String
 }
 
 model UserCredential {
