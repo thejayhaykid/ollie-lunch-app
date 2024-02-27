@@ -1,14 +1,16 @@
 export default {
+  // Text colors
   textPrimary: '#FFFFFF',
   textInverted: '#000000',
   textSuccess: '#33FF49',
   textWarning: '#FFAE42',
   textFailure: '#FF4242',
   textHint: '#888888',
-  textHighlight: '#FFFC79',
+  textHighlight: '#feb53d', // Use the provided orange from the palette
   textHighlightLighten: '#FFFCA5',
   textHighlightDarken: '#C7C365',
 
+  // Background colors
   bgPrimary: '#121212',
   bgSecondary: '#1D1D1D',
   bgSuccess: '#004D00',
@@ -16,38 +18,42 @@ export default {
   bgFailure: '#660000',
   bgFailureDarken: '#330000',
   bgInfo: '#000033',
-  bgHighlight: '#666600',
-  bgHighlightLighten: '#999900',
-  bgHighlightDarken: '#333300',
+  bgHighlight: '#eb5201', // Use the provided red from the palette
+  bgHighlightLighten: '#feb53d', // Use the provided orange from the palette
+  bgHighlightDarken: '#C74A00', // Create a darker shade of red using the palette
   bgLowlight: '#0D0D0D',
   bgTransaction: '#000066',
   bgTransactionDarken: '#000033',
   bgTransactionLighten: '#000099',
   bgTransactionLightest: '#0000CC',
 
+  // Border colors
   borderPrimary: '#333333',
   borderSecondary: '#444444',
-  borderHighlight: '#FFFF00',
-  borderHighlightLighten: '#FFFF33',
-  borderHighlightDarken: '#B3B300',
+  borderHighlight: '#feb53d', // Use the provided orange from the palette
+  borderHighlightLighten: '#FFFCA5',
+  borderHighlightDarken: '#C7C365',
   borderLowlight: '#0F0F0F',
   borderSuccess: '#006600',
   borderFailure: '#660000',
   borderWarning: '#663C00',
 
+  // Divider colors
   dividePrimary: '#333333',
   divideSecondary: '#444444',
-  divideHighlight: '#FFFF00',
+  divideHighlight: '#feb53d', // Use the provided orange from the palette
   divideLowlight: '#0F0F0F',
   divideSuccess: '#006600',
   divideFailure: '#660000',
 
+  // Ring colors
   ringPrimary: '#FFFFFF',
   ringSecondary: '#AAAAAA',
-  ringHighlight: '#FFFF00',
+  ringHighlight: '#feb53d', // Use the provided orange from the palette
   ringLowlight: '#0F0F0F',
   ringSuccess: '#006600',
   ringFailure: '#660000',
 
-  strokeHighlight: '#FFFF00',
+  // Stroke color
+  strokeHighlight: '#feb53d', // Use the provided orange from the palette
 }

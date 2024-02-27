@@ -71,6 +71,9 @@ module.exports = {
     stroke: {
       highlight: 'var(--stroke-highlight)',
     },
+    fill: {
+      primary: 'var(--bg-primary)',
+    },
     outlineColor: {},
     textDecorationColor: {},
     ringOffsetColor: {},
