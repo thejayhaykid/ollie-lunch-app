@@ -83,5 +83,5 @@ module.exports = {
       sans: ['Inter', 'Arial', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 }

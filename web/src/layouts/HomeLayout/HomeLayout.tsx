@@ -9,10 +9,7 @@ type HomeLayoutProps = {
   children?: React.ReactNode
 }
 
-const navigation = [
-  { name: 'Product', href: '#', route: routes.home() },
-  { name: 'Log in', href: '/login', route: routes.login() },
-]
+const navigation = []
 
 const HomeLayout = ({ children }: HomeLayoutProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -48,7 +45,7 @@ const HomeLayout = ({ children }: HomeLayoutProps) => {
               <Link
                 key={item.name}
                 to={item.route}
-                className="text-gray-900 text-sm font-semibold leading-6"
+                className="text-sm font-semibold leading-6 text-primary"
               >
                 {item.name}
               </Link>
@@ -57,7 +54,7 @@ const HomeLayout = ({ children }: HomeLayoutProps) => {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
               to={routes.login()}
-              className="text-gray-900 text-sm font-semibold leading-6"
+              className="text-sm font-semibold leading-6 text-primary"
             >
               Log in <span aria-hidden="true">&rarr;</span>
             </Link>
@@ -70,7 +67,7 @@ const HomeLayout = ({ children }: HomeLayoutProps) => {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="bg-white sm:ring-gray-900/10 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto px-6 py-6 sm:max-w-sm sm:ring-1">
+          <Dialog.Panel className="sm:ring-gray-900/10 fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-primary px-6 py-6 sm:max-w-sm sm:ring-1">
             <div className="flex items-center justify-between">
               <Link to={routes.home()} className="-m-1.5 p-1.5">
                 <span className="sr-only">Ollie</span>
@@ -97,7 +94,7 @@ const HomeLayout = ({ children }: HomeLayoutProps) => {
                       to={item.route}
                       key={item.name}
                       href={item.href}
-                      className="text-gray-900 hover:bg-gray-50 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7"
+                      className="hover:bg-gray-50 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-primary"
                     >
                       {item.name}
                     </Link>
@@ -107,7 +104,7 @@ const HomeLayout = ({ children }: HomeLayoutProps) => {
                   <Link
                     to={routes.login()}
                     href="#"
-                    className="text-gray-900 hover:bg-gray-50 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7"
+                    className="hover:bg-gray-50 -mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-primary"
                   >
                     Log in
                   </Link>
