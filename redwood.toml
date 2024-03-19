@@ -16,9 +16,6 @@
 [api]
   port = 8911
 [browser]
-  open = false
+  open = true
 [notifications]
   versionUpdates = ["latest"]
-
-[experimental.dockerfile]
-	enabled = true
